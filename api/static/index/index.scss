@@ -1,0 +1,32 @@
+// Define variables
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+
+// Define mixins
+@mixin center-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Define styles
+body {
+  font-family: Arial, sans-serif;
+  background-color: $primary-color;
+  color: $secondary-color;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: $primary-color;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+// Add more styles as needed
