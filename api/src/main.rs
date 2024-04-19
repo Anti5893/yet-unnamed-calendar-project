@@ -13,4 +13,8 @@ fn hi() -> &'static str { // define the content of the page with ID "hi"
 fn rocket() -> _ { 
     rocket::build()
     .mount("/", routes![index, hi]) // builds and mounts the routes specified in the array
+    // could also do
+    // .mount("/", routes![index]) and
+    // .mount("/", routes![hi])
+    // to mount the routes individually on separate lines
 }
