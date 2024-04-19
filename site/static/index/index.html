@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- HTMX and Tailwind Setup -->
+    <script src="https://unpkg.com/htmx.org@1.9.12" integrity="sha384-ujb1lZYygJmzgSwoxRggbCHcjc0rB2XoQrxeTUQyRjrOnlCoYta87iKBWq3EsdM2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/tailwind.css" />
+
+    <!-- Page Setup -->
+    <title>Hello World</title>
+    <link rel="stylesheet" href="./index.css" />
+</head>
+<body>
+    <div class="bg-slate-500 round">
+        <h1>Welcome to My Web Page</h1>
+        <p>This is a basic HTML file.</p>
+        <button class="bg-yellow-600" hx-post="/clicked" hx-swap="outerHTML">
+            Click Me
+        </button>
+    </div>
+    
+</body>
+</html>
